@@ -1,4 +1,4 @@
-<! DOCTYPE html>
+<!--DOCTYPE html-->
 
 <html>
 
@@ -8,13 +8,24 @@
 				text-align:center;
 				padding:50px;
 			}
+			body{
+				background-image: url(bcg.jpg);
+				background-position: center;
+				background-size: cover;		  <!--基于设备大小伸缩-->
+			}
+			#container > div{
+				display: flex;	<!--根据设备伸缩-->
+				flex-wrap: wrap;<!--格子不够可以自动换行-->
+			}
 		</style>
 		<title>Mic Club</title>
 	</head>
 	
 	<body>
+		<div class="container">
+			<img src="mic.jpg" align="center" width="1280">
+		</div>
 		
-		<img src="mic.jpg" align="center" width="100%">
 		<div>
 			<table align="center">
 				<th>社团活动</th>
